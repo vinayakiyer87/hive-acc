@@ -1,0 +1,113 @@
+///************************************** DATA RESPONSE START***************************************************************************//
+
+######## con vinayak called ##########
+## COMMND ERROR ## : stderr: 16/12/21 19:50:11 WARN conf.HiveConf: HiveConf of name hive.server2.enable.impersonisation does not exist
+
+## COMMND ERROR ## : stderr:
+Logging initialized using configuration in file:/etc/hive/2.5.0.0-1245/0/hive-log4j.properties
+
+## COMMND ERROR ## : stderr: Query ID = dev_Rht_20161221195013_f999ac5e-2c49-4b24-be9b-b21f6963bb2a
+
+## COMMND ERROR ## : stderr: Total jobs = 1
+
+## COMMND ERROR ## : stderr: 16/12/21 19:50:19 WARN conf.HiveConf: HiveConf of name hive.server2.enable.impersonisation does not exist
+
+## COMMND ERROR ## : stderr: Execution log at: /tmp/dev_Rht/dev_Rht_20161221195013_f999ac5e-2c49-4b24-be9b-b21f6963bb2a.log
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:19        Starting to launch local task to process map join;     maximum memory = 1054343168
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:20        Dump the side-table for tag: 1 with group count: 1022 into file: file:/tmp/dev_Rht/c7b8a8c3-bb23-44ce-9320-43c73a07aaea/hive_2016-12-21_19-50-13_335_5023602389356866926-1/-local-10004/HashTable-Stage-2/MapJoin-mapfile01--.hashtable
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:21        Uploaded 1 File to: file:/tmp/dev_Rht/c7b8a8c3-bb23-44ce-9320-43c73a07aaea/hive_2016-12-21_19-50-13_335_5023602389356866926-1/-local-10004/HashTable-Stage-2/MapJoin-mapfile01--.hashtable (35176 bytes)
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:21        End of local task; Time Taken: 1.301 sec.
+
+^[[B^[[B^[[B## COMMND ERROR ## : stderr: Execution completed successfully
+## COMMND ERROR ## : stderr:
+
+## COMMND ERROR ## : stderr: MapredLocal task succeeded
+
+## COMMND ERROR ## : stderr: Launching Job 1 out of 1
+
+## COMMND ERROR ## : stderr: Number of reduce tasks not specified. Estimated from input data size: 1
+## COMMND ERROR ## : stderr:
+
+## COMMND ERROR ## : stderr: In order to change the average load for a reducer (in bytes):
+
+## COMMND ERROR ## : stderr:   set hive.exec.reducers.bytes.per.reducer=<number>
+
+## COMMND ERROR ## : stderr: In order to limit the maximum number of reducers:
+
+## COMMND ERROR ## : stderr:   set hive.exec.reducers.max=<number>
+
+## COMMND ERROR ## : stderr: In order to set a constant number of reducers:
+
+## COMMND ERROR ## : stderr:   set mapreduce.job.reduces=<number>
+
+## COMMND ERROR ## : stderr: Starting Job = job_1482140448732_0111, Tracking URL = http://vbcchadoopdata2.axisb.com:8088/proxy/application_1482140448732_0111/
+
+## COMMND ERROR ## : stderr: Kill Command = /usr/hdp/2.5.0.0-1245/hadoop/bin/hadoop job  -kill job_1482140448732_0111
+
+## COMMND ERROR ## : stderr: Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:32,418 Stage-2 map = 0%,  reduce = 0%
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:42,863 Stage-2 map = 11%,  reduce = 0%, Cumulative CPU 19.11 sec
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:46,022 Stage-2 map = 22%,  reduce = 0%, Cumulative CPU 24.84 sec
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:49,156 Stage-2 map = 35%,  reduce = 0%, Cumulative CPU 33.65 sec
+
+^[[B^[[B^[[B## COMMND ERROR ## : stderr: 2016-12-21 19:50:52,282 Stage-2 map = 48%,  reduce = 0%, Cumulative CPU 37.38 sec
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:55,427 Stage-2 map = 63%,  reduce = 0%, Cumulative CPU 40.49 sec
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:50:56,474 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 41.37 sec
+
+## COMMND ERROR ## : stderr: 2016-12-21 19:51:02,714 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 46.25 sec
+
+## COMMND ERROR ## : stderr: MapReduce Total cumulative CPU time: 46 seconds 250 msec
+
+## COMMND ERROR ## : stderr: Ended Job = job_1482140448732_0111
+
+## COMMND ERROR ## : stderr: MapReduce Jobs Launched:
+
+## COMMND ERROR ## : stderr: Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 46.25 sec   HDFS Read: 19333689 HDFS Write: 443 SUCCESS
+
+## COMMND ERROR ## : stderr: Total MapReduce CPU Time Spent: 46 seconds 250 msec
+
+## COMMND ERROR ## : stderr: OK
+
+## COMMND XECUTED Success :stdout: 13   0.02    23      0.11    0.15    37      AIRLINES
+74      0.02    343     0.08    0.23    708     ALL CLOTHING STORES
+211     0.02    127     0.02    0.03    386     ALL ENTERTAINMENT
+1367    0.3     2888    0.58    1.74    5827    ALL OTHER MERCHANTS
+## COMMND XECUTED Success :stdout:
+2       0.0     3       0.0     0.0     4       CAR RENTAL COMPANIES
+1082    0.16    1161    0.26    0.53    2698    DIY AND HOUSEHOLD STORES
+107     0.03    109     0.03    0.05    162     MAIL ORDER / TELEPHONE ORDER PROVIDERS
+1       0.0     33      0.05    0.07    49      OTHERS
+6       0.0     42      0.0     0.01    95      RESTAURANTS
+2425    0.32    2145    0.58    1.03    5156    SERVICE PROVIDERS
+
+## COMMND ERROR ## : stderr: Time taken: 51.566 seconds, Fetched: 10 row(s)
+
+////************************************* DATA RESPONSE END*****************************************************************************//
+
+////**** DATA IN ROWS START ****************************************//
+13      0.02    23      0.11    0.15    37      AIRLINES
+74      0.02    343     0.08    0.23    708     ALL CLOTHING STORES
+211     0.02    127     0.02    0.03    386     ALL ENTERTAINMENT
+1367    0.3     2888    0.58    1.74    5827    ALL OTHER MERCHANTS
+2       0.0     3       0.0     0.0     4       CAR RENTAL COMPANIES
+1082    0.16    1161    0.26    0.53    2698    DIY AND HOUSEHOLD STORES
+107     0.03    109     0.03    0.05    162     MAIL ORDER / TELEPHONE ORDER PROVIDERS
+1       0.0     33      0.05    0.07    49      OTHERS
+6       0.0     42      0.0     0.01    95      RESTAURANTS
+2425    0.32    2145    0.58    1.03    5156    SERVICE PROVIDERS
+
+
+
+/********************************** DATA IN ROWS ***************/// 
+--- DATA RESPONSE IS DIFFERENT 
+---- 
