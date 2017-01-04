@@ -123,4 +123,12 @@ content 1 : drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:28 bin
 CSV LINE :drwxr-xr-x,1,Acer-Vinayak-2,197121,0,Jul,29,14:28,bin
 $$$$$$ {"one":"drwxr-xr-x","two":"1","three":"Acer-Vinayak-2","four":"197121","five":"0","six":"Jul","seven":"29","eight":"14:28","nine":"bin"}
 
-  
+
+//*************************************** ROUTER ******************************
+module.exports = {
+  id: 'raw:youtube',
+  cls: Youtube
+  validateConfig: function (configuration) {
+    return true;
+  }
+};
