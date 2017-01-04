@@ -18,4 +18,21 @@ select acct_name, mdab_variance, meb_variance from ods_hive.nri_data limit 10;
 Hua toh bol
 
 Code DU Kya ?
+//*************************************************************//
+const hive = spawn('hive', ['-f' + './test.hql']);
 
+hive.stdout.on('data', (data) => {
+    console.log("## COMMND XECUTED Success :" + ` ${data}`);
+
+
+    var fs = require('fs');
+    fs.writeFile("hive_data.txt", data, function(err) {
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log("The file was saved!");
+        res.send(JSON.stringify(_d))
+    });
+});
+//********************************************************************//
