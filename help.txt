@@ -16,3 +16,6 @@ hello
 select acct_name, mdab_variance, meb_variance from ods_hive.nri_data limit 10;
 
 Hua toh bol
+
+Code DU Kya ?
+
