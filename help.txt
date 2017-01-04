@@ -128,7 +128,7 @@ $$$$$$ {"one":"drwxr-xr-x","two":"1","three":"Acer-Vinayak-2","four":"197121","f
 module.exports = {
   id: 'raw:youtube',
   cls: Youtube
-  validateConfig: function (configuration) {
+  data1: function (configuration) {
     return true;
   }
 };
