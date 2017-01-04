@@ -53,3 +53,43 @@ permission denied aaya
   code: 'EACCES',
   syscall: 'open',
   path: 'hive_data.txt' }
+  
+  // ********************* NEW WORKING CODE ********************************************//
+  
+  	const exec = require('child_process').exec;
+	exec('ls -lh /usr', (error, stdout, stderr) => {
+	    if (error) {
+	        console.error(`exec error: ${error}`);
+	        return;
+	    }
+	    console.log(`stdout: ${stdout}`);
+
+	    var split_line = stdout.split('\n');
+	    console.log('length : ' + split_line.length);
+	    console.log('content 1 : ' + split_line[1]);
+
+	    var csvLine = (split_line[1]).split(' ');
+	    console.log("\nCSV LINE :" + csvLine);
+
+	    let obj = {};
+
+	    for (var i = 0; i <= split_line.length; i++) {
+	        for (var j = 0; j <= csvLine.length; j++) {
+	            obj.one = csvLine[0];
+	            obj.two = csvLine[1];
+	            obj.three = csvLine[2];
+	            obj.four = csvLine[3];
+
+	            obj.five = csvLine[4];
+	            obj.six = csvLine[5];
+	            obj.seven = csvLine[6];
+	            obj.eight = csvLine[7];
+	            obj.nine = csvLine[8];
+	        }
+	    }
+	    console.log("$$$$$$ " + JSON.stringify(obj));
+
+
+	});
+ //*********************************************************************************//
+  
