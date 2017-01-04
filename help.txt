@@ -36,3 +36,20 @@ hive.stdout.on('data', (data) => {
     });
 });
 //********************************************************************//
+
+
+
+permission denied aaya
+
+{ Error: EACCES: permission denied, open 'hive_data.txt'
+    at Error (native)
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: 'hive_data.txt' }
+{ Error: EACCES: permission denied, open 'hive_data.txt'
+    at Error (native)
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: 'hive_data.txt' }
