@@ -22,6 +22,8 @@ router.get('/connect', function(req, res) {
         version: '0.7.1-cdh3u2',
         server: '10.0.66.240',
         port: 9083,
+       // username:'dev_Rht',
+       // password:'dev@1234',
         timeout: 1000
     });
     // Execute call 
@@ -66,7 +68,10 @@ router.get('/connect2', function(req, res) {
 
 // connect const method
 router.get('/con', function(req, res) {
-    console.log("######## con vinayak called ########## ");    
+    console.log("######## con vinayak called ########## ");
+    ////// SET TIMEOUT STARTS
+		function f() {		
+   
 // const test start
 const exec = require('child_process').exec;
     var spawn = require('child_process').spawn;
@@ -78,22 +83,42 @@ const exec = require('child_process').exec;
       console.log(stdout);
     });*/
 
-    //using spwan big_query/axis#1234@10.9.112.237:44106/AXBIGQ
+   // using spwan big_query/axis#1234@10.9.112.237:44106/AXBIGQ
     //const sqlldr = spawn('sqlldr', ['admin/12345@localhost:1521/xe control=csvloader.txt log=csvloader.log']);
-    const hive = spawn('hive', ['-f'+'./test.hql']);
+  
+
+
+     
+     const hive = spawn('hive', ['-f'+'./test.hql']);
 
     hive.stdout.on('data', (data) => {
        console.log("## COMMND XECUTED Success :" + ` ${data}`);
        var newarr = [];
-       console.log("Data : "+data);
-       
-      //res.send(data);
+       console.log("Data : "+data.toString());
+      var _d=data.toString();
+        //  global._global=_d;
+          //console.log("########THIS HHAS BEEN CHANGED TOOOOOOOOOOOOO: "+_global +"***"+ _d);    
+ //  var _g=global._d;
+      //global._d;
+      //res.send(data.toString());
+	  console.log("STRINGIFY RESULTS:  "+JSON.stringify(_d));
+	  res.send(JSON.stringify(_d));
      });
 
-    hive.stderr.on('data', (data) => {
-        console.log("## COMMND ERROR ## : " + `stderr: ${data}`);
+    
         //utility.sendError(err);
-    });
+
+////// ERRROR START
+hive.stderr.on('data', (data) => {
+        console.log("## COMMND ERROR ## : " + `stderr: ${data}`);
+ });
+////// ERROR END
+			console.log("TIME OUT 11111")}
+			setTimeout(f, 6) 
+			console.log("******TIME OUR @@@@@@@@@@@@");
+   ////////////// SET TIMEOUT ENDS
+   //res.send(_d);
+   console.log("THIS SHOULD BE THE GLOBAL DATA:   "+_global);
                     
 // const test end
 
@@ -120,14 +145,11 @@ router.get('/con2', function(req, res) {
            //var _newJSON = JSON.parse(json);
            //console.log("********TYPE OF PARSED DATA "+json.split(' ')); 
 
-	    //var buf = new Buffer(json);
-	    //var finalJson = buf.toJSON(buf);
+	    var buf = new Buffer(json);
+	    var finalJson = buf.toJSON(buf);
 
 	   console.log("############## JSON ###############"+json);
-         
-  
-
-
+      
         })
         // spawn ends
 
