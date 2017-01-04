@@ -11,3 +11,6 @@ hello
 \nBRIJESH KHANDELWAL\t0.0\t0.0
 \nABDUL RASHID SULTAN\t-1246.02\t-1411.5
 \n"
+
+
+select acct_name, mdab_variance, meb_variance from ods_hive.nri_data limit 10;
