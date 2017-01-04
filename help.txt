@@ -1,58 +1,76 @@
-hi
-hello
+
+	// connect const method
+	router.get('/con', function(req, res) {
+		console.log("######## con vinayak called ########## ");
+		// ////// SET TIMEOUT STARTS
+			// function f() {		
+	   
+	// const test start
+	const exec = require('child_process').exec;
+
+		var spawn = require('child_process').spawn;
+		/*exec('sqlldr admin/12345@localhost:1521/xe control=csvloader.txt log= csvloader.log', (err, stdout, stderr) => {
+		  if (err) {
+			console.error(err);
+			return;
+		  }
+		  console.log(stdout);
+		});*/
+
+	   // using spwan big_query/axis#1234@10.9.112.237:44106/AXBIGQ
+		//const sqlldr = spawn('sqlldr', ['admin/12345@localhost:1521/xe control=csvloader.txt log=csvloader.log']);
+		 const hive = spawn('hive', ['-f'+'./test.hql']);
+
+		hive.stdout.on('data', (data) => {
+		
+			//vinu's code
+			
+		  // console.log("## COMMND XECUTED Success :" + JSON.stringify(`${data}`));
+		   // var newarr = [];
+		   // newarr.push(data);
+		   
+			// console.log("## COMMND XECUTED Success :" + newarr);
+		   //console.log("Data : "+data.length);` ${data}`
+		  //var _d=data.toString();
+			
+			
+			//  global._global=_d;
+			  //console.log("########THIS HHAS BEEN CHANGED TOOOOOOOOOOOOO: "+_global +"***"+ _d);    
+		   //  var _g=global._d;
+		  //global._d;
+		  //res.send(data.toString());
+		  //console.log("STRINGIFY RESULTS:  "+JSON.stringify(_d));
+		  //res.send(JSON.stringify(_d));
+		  
+		  
+		  
+		  //Suraj's Code
+		  
+			 // var remTabs = JSON.stringify(data.toString());
+			// // remTabs = remTabs.split("\t");
+			 
+			 // console.log("## Ok My code :" +  remTabs.split("Manan"));
+
+			 
+
+			// var fs = require('fs');
+			// fs.writeFile("./hive_data.txt", data, function(err) {
+				// if (err) {
+					// return console.log(err);
+				// }
+
+			// console.log("The file was saved!");
+			// JSON.stringify(_d);
+			
+			res.render('queryBarChart');
+		//});
+		 });
 
 
 
-"SAUMIL RELUBHAI NIHALANI\t3390.23\t2257.0
-\nASHOK MOTIRAM TENDLE\t-650.6\t-1013.5
-\nASHOK MOTIRAM TENDLE\t-108020.06\t-109447.0
-\nBHARAT BHUSHAN KASHYAP\t-386.19\t-446.19
-\nKHANDURI BIPIN NANDKISHORE\t-10193.23\t-10296.78
-\nBRIJESH KHANDELWAL\t0.0\t0.0
-\nABDUL RASHID SULTAN\t-1246.02\t-1411.5
-\n"
-
-
-select acct_name, mdab_variance, meb_variance from ods_hive.nri_data limit 10;
-
-Hua toh bol
-
-Code DU Kya ?
-//*************************************************************//
-const hive = spawn('hive', ['-f' + './test.hql']);
-
-hive.stdout.on('data', (data) => {
-    console.log("## COMMND XECUTED Success :" + ` ${data}`);
-
-
-    var fs = require('fs');
-    fs.writeFile("hive_data.txt", data, function(err) {
-        if (err) {
-            return console.log(err);
-        }
-
-        console.log("The file was saved!");
-        res.send(JSON.stringify(_d))
-    });
-});
-//********************************************************************//
 
 
 
-permission denied aaya
-
-{ Error: EACCES: permission denied, open 'hive_data.txt'
-    at Error (native)
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'open',
-  path: 'hive_data.txt' }
-{ Error: EACCES: permission denied, open 'hive_data.txt'
-    at Error (native)
-  errno: -13,
-  code: 'EACCES',
-  syscall: 'open',
-  path: 'hive_data.txt' }
   
   // ********************* NEW WORKING CODE ********************************************//
   
