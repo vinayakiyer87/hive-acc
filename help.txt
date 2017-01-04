@@ -15,12 +15,4 @@ hello
 
 select acct_name, mdab_variance, meb_variance from ods_hive.nri_data limit 10;
 
-JSON:
-{
- name : '',
- mdab_variance:'',
- meb_variance:''
-},
-{
-
-}
+Hua toh bol
