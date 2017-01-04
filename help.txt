@@ -91,5 +91,18 @@ permission denied aaya
 
 
 	});
- //*********************************************************************************//
+ //*******************************OUTPUT**************************************************//
+ stdout: total 136K
+drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:28 bin
+drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:27 lib
+drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:27 libexec
+drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:27 share
+drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:28 ssl
+
+length : 7
+content 1 : drwxr-xr-x 1 Acer-Vinayak-2 197121 0 Jul 29 14:28 bin
+
+CSV LINE :drwxr-xr-x,1,Acer-Vinayak-2,197121,0,Jul,29,14:28,bin
+$$$$$$ {"one":"drwxr-xr-x","two":"1","three":"Acer-Vinayak-2","four":"197121","five":"0","six":"Jul","seven":"29","eight":"14:28","nine":"bin"}
+
   
