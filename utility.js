@@ -308,12 +308,12 @@ exports.callSQLLoder = function(csvfile, sqlquery,flag) {
                        console.log(" THIS IS  ONLY THE COUNT:  "+_dString+" **THIS IS TOTAL RESULT COUNT LENGTH: "+totalres.toString().length);
                               
                         //Final update logic start
-                           if(_gaStatussave=2){
+                           if(_gaStatussave==2){
                             console.log(" *****I AM INSIDE IF CONDITION _gaStatussave==2 ***");
                             console.log("_dStringTotal "+_dStringTotal+" _dString "+_dString);
                             var _finalstatus =_dStringTotal-_dString;
                             console.log(_finalstatus);
-                                if(_finalstatus=0){
+                                if(_finalstatus==0){
                                     console.log(" *** I FOUND A MATCH with COUNT, I SHOULD BE CALLED AT END***");
                                     //Update start
                                        var rowID = ga_rowID;
@@ -340,7 +340,7 @@ exports.callSQLLoder = function(csvfile, sqlquery,flag) {
                              var _dString = data.toString().replace( /^\D+/g, '');
                              if(_totalResults<10000){
                                 var _finalstatus =_totalResults-_dString;
-                                if(_finalstatus=0){
+                                if(_finalstatus==0){
                                 var rowID = ga_rowID;
                                 connection.query('UPDATE schedules SET status ="done" WHERE id= ? ',rowID,function(err,result){
                                     if(err){
@@ -633,12 +633,12 @@ exports.callSQLLoderCustom = function(csvfile, sqlquery,flag) {
                        console.log(" THIS IS  ONLY THE COUNT:  "+_dString+" **THIS IS TOTAL RESULT COUNT LENGTH: "+totalres.toString().length);
                               
                         //Final update logic start
-                           if(_gaStatussave=2){
+                           if(_gaStatussave==2){
                             console.log(" *****I AM INSIDE IF CONDITION _gaStatussave==2 ***");
                             console.log("_dStringTotal "+_dStringTotal+" _dString "+_dString);
                             var _finalstatus =_dStringTotal-_dString;
                             console.log(_finalstatus);
-                                if(_finalstatus=0){
+                                if(_finalstatus==0){
                                     console.log(" *** I FOUND A MATCH with COUNT, I SHOULD BE CALLED AT END***");
                                     //Update start
                                        var rowID = ga_rowID;
@@ -666,7 +666,7 @@ exports.callSQLLoderCustom = function(csvfile, sqlquery,flag) {
                              var _dString = data.toString().replace( /^\D+/g, '');
                              if(_totalResults<10000){
                                 var _finalstatus =_totalResults-_dString;
-                                if(_finalstatus=0){
+                                if(_finalstatus==0){
                                 var rowID = ga_rowID;
                                 connection.query('UPDATE schedules SET status ="done" WHERE id= ? ',rowID,function(err,result){
                                     if(err){
@@ -770,7 +770,7 @@ exports.sendError = function(errData){
     var data = errData;
     //var transporter = nodemailer.createTransport('smtp://arjun@appliedcloudcomputing.com:arjunacc@smtp.gmail.com');
 }
-
+=======
    res.send(data);
 }*/
 
